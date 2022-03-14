@@ -8,7 +8,7 @@
 
 docker image: mysql
 
-### `docker run --name mysql -d -p 127.0.0.1:3306:3306 -e MYSQL_ROOT_PASSWORD=pass -e MYSQL_DATABASE=yourcar -e MYSQL_USER=test -e MYSQL_PASSWORD=pass mysql`
+`docker run --name mysql -d -p 127.0.0.1:3306:3306 -e MYSQL_ROOT_PASSWORD=pass -e MYSQL_DATABASE=yourcar -e MYSQL_USER=test -e MYSQL_PASSWORD=pass mysql`
 
 1. Create docker container by image mysql
 2. Run in port 3306,
