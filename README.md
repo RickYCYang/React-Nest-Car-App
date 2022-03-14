@@ -83,12 +83,10 @@ nestjs-car-app/ormconfig.json
 Open Graphql Playground
 http://localhost:9000/graphql [http://localhost:9000/graphql]
 
-### Query Cars. 
+### Query Cars
 
   query car{
-  
     cars {
-    
       id, 
       name,
       mileage,
@@ -101,25 +99,25 @@ http://localhost:9000/graphql [http://localhost:9000/graphql]
   }
 
 ### Add New Car
-
-`
-  mutation {
-    addNewCar (
-      newCarData: {
-        name: "Audi S3 Car",
-        monthlyPrice: 1600,
-        dailyPrice: 70,
-        gearType: "Auto",
-        gas: "Petrol",
-        mileage: "10k",
-        thumbnailUrl: "https://cdn.jdpower.com/Models/640x480/2017-Audi-S3-PremiumPlus.jpg"
+  {
+  
+    mutation {
+      addNewCar (
+        newCarData: {
+          name: "Audi S3 Car",
+          monthlyPrice: 1600,
+          dailyPrice: 70,
+          gearType: "Auto",
+          gas: "Petrol",
+          mileage: "10k",
+          thumbnailUrl: "https://cdn.jdpower.com/Models/640x480/2017-Audi-S3-PremiumPlus.jpg"
+        }
+      ) 
+      {
+        id,
+        name,
+        mileage,
+        thumbnailUrl
       }
-    ) 
-    {
-      id,
-      name,
-      mileage,
-      thumbnailUrl
     }
   }
-`
