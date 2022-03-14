@@ -1,0 +1,56 @@
+
+docker image: 
+  mysql
+docker run script: 
+  docker run --name mysql -d -p 127.0.0.1:3306:3306 -e MYSQL_ROOT_PASSWORD=pass -e MYSQL_DATABASE=yourcar -e MYSQL_USER=test -e MYSQL_PASSWORD=pass mysql
+
+enter mysql container by bash
+  docker exec -i -t mysql bash
+
+enter mysql
+  mysql -u root -p
+  (account: root, password: pass)
+
+create database :
+  create database yourcar;
+
+If you want to connect to database by Workbench, you need to run the following sql
+  CREATE USER 'test'@'172.17.0.1' IDENTIFIED BY 'pass';
+  GRANT ALL PRIVILEGES ON *.* TO 'test'@'172.17.0.1' WITH GRANT OPTION;
+  flush privileges;
+  ALTER USER 'test'@'172.17.0.1' IDENTIFIED WITH mysql_native_password BY 'pass';
+
+graphql palyground
+  http://localhost:9000/graphql
+
+graphql query
+  query car{
+    cars {
+      id,
+      name,
+      mileage,
+      gearType,
+      gas,
+      thumbnailUrl,
+      monthlyPrice,
+      dailyPrice
+    }
+  }
+
+graphql mutation
+mutation {
+  addNewCar (newCarData: {
+    name: "Audi S3 Car",
+    monthlyPrice: 1600,
+    dailyPrice: 70,
+    gearType: "Auto",
+    gas: "Petrol",
+    mileage: "10k",
+    thumbnailUrl: "https://cdn.jdpower.com/Models/640x480/2017-Audi-S3-PremiumPlus.jpg"
+  }) {
+    id,
+    name,
+    mileage,
+    thumbnailUrl
+  }
+}
