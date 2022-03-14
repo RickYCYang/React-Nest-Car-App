@@ -85,8 +85,10 @@ http://localhost:9000/graphql [http://localhost:9000/graphql]
 
 ### Query Cars. 
 
-  query car{. 
-    cars {. 
+  query car{
+  
+    cars {
+    
       id, 
       name,
       mileage,
