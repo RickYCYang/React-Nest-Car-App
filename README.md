@@ -84,7 +84,7 @@ Open Graphql Playground
 http://localhost:9000/graphql [http://localhost:9000/graphql]
 
 ### Query Cars
-
+`
   query car{
     cars {
       id, 
@@ -97,9 +97,9 @@ http://localhost:9000/graphql [http://localhost:9000/graphql]
       dailyPrice
     }
   }
+`
 
 ### Add New Car
-  {
   
     mutation {
       addNewCar (
@@ -120,4 +120,4 @@ http://localhost:9000/graphql [http://localhost:9000/graphql]
         thumbnailUrl
       }
     }
-  }
+  
