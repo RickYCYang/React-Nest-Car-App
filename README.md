@@ -85,35 +85,41 @@ http://localhost:9000/graphql [http://localhost:9000/graphql]
 
 ### Query Cars
 
-graphql query
-query car{
-cars {
-id,
-name,
-mileage,
-gearType,
-gas,
-thumbnailUrl,
-monthlyPrice,
-dailyPrice
-}
-}
+`
+  query car{
+    cars {
+      id,
+      name,
+      mileage,
+      gearType,
+      gas,
+      thumbnailUrl,
+      monthlyPrice,
+      dailyPrice
+    }
+  }
+`
 
 ### Add New Car
 
-mutation {
-addNewCar (newCarData: {
-name: "Audi S3 Car",
-monthlyPrice: 1600,
-dailyPrice: 70,
-gearType: "Auto",
-gas: "Petrol",
-mileage: "10k",
-thumbnailUrl: "https://cdn.jdpower.com/Models/640x480/2017-Audi-S3-PremiumPlus.jpg"
-}) {
-id,
-name,
-mileage,
-thumbnailUrl
-}
-}
+`
+  mutation {
+    addNewCar (
+      newCarData: {
+        name: "Audi S3 Car",
+        monthlyPrice: 1600,
+        dailyPrice: 70,
+        gearType: "Auto",
+        gas: "Petrol",
+        mileage: "10k",
+        thumbnailUrl: "https://cdn.jdpower.com/Models/640x480/2017-Audi-S3-PremiumPlus.jpg"
+      }
+    ) 
+    {
+      id,
+      name,
+      mileage,
+      thumbnailUrl
+    }
+  }
+`
