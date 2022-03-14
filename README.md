@@ -35,6 +35,7 @@ Change database to database_name
 Create a new database database_name
 
 If you want to connect to database by Workbench, you need to run the following sql
+
 `CREATE USER 'test'@'172.17.0.1' IDENTIFIED BY 'pass';`
 
 `GRANT ALL PRIVILEGES ON *.* TO 'test'@'172.17.0.1' WITH GRANT OPTION;`
