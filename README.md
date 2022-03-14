@@ -84,8 +84,8 @@ Open Graphql Playground
 http://localhost:9000/graphql [http://localhost:9000/graphql]
 
 ### Query Cars
-`
-  query car{
+<pre>
+  query car {
     cars {
       id, 
       name,
@@ -96,8 +96,8 @@ http://localhost:9000/graphql [http://localhost:9000/graphql]
       monthlyPrice,
       dailyPrice
     }
-  }
-`
+  } 
+</pre>
 
 ### Add New Car
   
