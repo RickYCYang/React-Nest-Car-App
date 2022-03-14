@@ -36,9 +36,14 @@ Create a new database database_name
 
 If you want to connect to database by Workbench, you need to run the following sql
 `CREATE USER 'test'@'172.17.0.1' IDENTIFIED BY 'pass';`
+
 `GRANT ALL PRIVILEGES ON *.* TO 'test'@'172.17.0.1' WITH GRANT OPTION;`
+
 `flush privileges;`
+
 `ALTER USER 'test'@'172.17.0.1' IDENTIFIED WITH mysql_native_password BY 'pass';`
+
+
 
 `CREATE DATABASE database_name`;
 
