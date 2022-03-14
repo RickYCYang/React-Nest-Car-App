@@ -1,5 +1,4 @@
-This project is a practice for the followings
-
+# Car App
 - Frontend: React, Redux Toolkit, Styled-Component, Tailwind, Graphql(Apollo Client)
 - Backend: Nestjs, TypeORM, Graphql
 - Database: MySQL
@@ -17,21 +16,21 @@ docker image: mysql
 4. Create account test and password = pass
 5. Create a database = yourcar
 
-### `docker exec -i -t mysql bash`
+`docker exec -i -t mysql bash`
 
 Enter docker container mysql
 
 ## MySQL Available Scripts
 
-### `mysql -u root -p`
+`mysql -u root -p`
 
 Enter mysql database by user root
 
-### `USE database_name;`
+`USE database_name;`
 
 Change database to database_name
 
-### `CREATE DATABASE database_name`;
+`CREATE DATABASE database_name`;
 
 Create a new database database_name
 
@@ -41,7 +40,7 @@ If you want to connect to database by Workbench, you need to run the following s
 `flush privileges;`
 `ALTER USER 'test'@'172.17.0.1' IDENTIFIED WITH mysql_native_password BY 'pass';`
 
-### `CREATE DATABASE database_name`;
+`CREATE DATABASE database_name`;
 
 ## Frontend Available Scripts
 
@@ -62,11 +61,11 @@ Your app is ready to be deployed!
 
 ## Backend Available Scripts
 
-### `yarn start:dev`
+`yarn start:dev`
 
 To setup the nestjs server in developing mode
 
-### `yarn start:prod`
+`yarn start:prod`
 
 To setup the nestjs server in production mode
 
@@ -78,7 +77,7 @@ nestjs-car-app/ormconfig.json
 Open Graphql Playground
 http://localhost:9000/graphql [http://localhost:9000/graphql]
 
-# Query Cars
+### Query Cars
 
 graphql query
 query car{
@@ -94,7 +93,7 @@ dailyPrice
 }
 }
 
-# Add New Car
+### Add New Car
 
 mutation {
 addNewCar (newCarData: {
