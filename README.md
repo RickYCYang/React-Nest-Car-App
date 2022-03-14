@@ -100,7 +100,7 @@ http://localhost:9000/graphql [http://localhost:9000/graphql]
 </pre>
 
 ### Add New Car
-  
+<pre>
     mutation {
       addNewCar (
         newCarData: {
@@ -120,4 +120,4 @@ http://localhost:9000/graphql [http://localhost:9000/graphql]
         thumbnailUrl
       }
     }
-  
+</pre>
