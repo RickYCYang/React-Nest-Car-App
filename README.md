@@ -46,12 +46,12 @@ If you want to connect to database by Workbench, you need to run the following s
 
 In the project directory (cd to react-car-app), you can run:
 
-### `yarn run start`
+`yarn run start`
 
 Runs the app in the development mode.<br />
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-### `yarn build`
+`yarn build`
 
 Builds the app for production to the `build` folder.<br />
 It correctly bundles React in production mode and optimizes the build for the best performance.
