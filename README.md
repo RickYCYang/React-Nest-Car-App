@@ -86,18 +86,18 @@ http://localhost:9000/graphql [http://localhost:9000/graphql]
 ### Query Cars. 
 
 `
-  query car{  
-    cars {  
-      id,  
-      name,  
-      mileage,  
-      gearType,  
-      gas,  
-      thumbnailUrl,  
-      monthlyPrice,  
-      dailyPrice  
-    }   
-  }  
+  query car{. 
+    cars {. 
+      id,. 
+      name,. 
+      mileage,.   
+      gearType,.  
+      gas,.   
+      thumbnailUrl,. 
+      monthlyPrice,.   
+      dailyPrice.   
+    }.    
+  }.   
 `
 
 ### Add New Car
